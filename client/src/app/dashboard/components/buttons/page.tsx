@@ -1,7 +1,5 @@
-
-
 export default function Buttons() {
     return (
-        <h1>d</h1>
+        <h1>Components Buttons</h1>
     );
 }

@@ -46,12 +46,12 @@ const menuItems: MenuItem[] = [
                     list: [
                         {
                             title: "User Form",
-                            path: ""
+                            path: "/dashboard/users/userform"
                         },
 
                         {
                             title: "All Users",
-                            path: ""
+                            path: "/dashboard/users/allusers"
                         },
                     ]
                 }
@@ -70,7 +70,7 @@ const menuItems: MenuItem[] = [
 
                         {
                             title: "Cards",
-                            path: ""
+                            path: "/dashboard/components/cards"
                         },
                     ]
                 }
@@ -84,20 +84,20 @@ const menuItems: MenuItem[] = [
                     list: [
                         {
                             title: "Colours",
-                            path: ""
+                            path: "/dashboard/utilities/colours"
                         },
 
                         {
                             title: "Borders",
-                            path: ""
+                            path: "/dashboard/utilities/borders"
                         },
                         {
                             title: "Animation",
-                            path: ""
+                            path: "/dashboard/utilities/animations"
                         },
                         {
                             title: "Other",
-                            path: ""
+                            path: "/dashboard/utilities/others"
                         },
                     ]
                 }
@@ -117,24 +117,24 @@ const menuItems: MenuItem[] = [
                     list: [
                         {
                             title: "Login",
-                            path: ""
+                            path: "/dashboard/pages/login"
                         },
 
                         {
                             title: "Register",
-                            path: ""
+                            path: "/dashboard/pages/register"
                         },
                         {
                             title: "Forgot Password",
-                            path: ""
+                            path: "/dashboard/pages/forgotpassword"
                         },
                         {
                             title: "404 Page",
-                            path: ""
+                            path: "/dashboard/pages/404notfound"
                         },
                         {
                             title: "Blank Page",
-                            path: ""
+                            path: "/dashboard/pages/blankpage"
                         },
                     ]
                 }
