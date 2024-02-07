@@ -30,7 +30,6 @@ const menuItems: MenuItem[] = [
                 title: "Dashboard",
                 path: "/dashboard/",
                 icon: <IoIosSpeedometer className="text-gray-200 hover:text-white transition-all text-[18px]"/>,
-
             },
         ],
     },
@@ -42,6 +41,20 @@ const menuItems: MenuItem[] = [
                 title: "Users",
                 path: "/dashboard/users",
                 icon: <MdSupervisedUserCircle className="text-gray-200 hover:text-white transition-all text-[20px]"/>,
+                submenu: {
+                    title: "Users Details:",
+                    list: [
+                        {
+                            title: "User Form",
+                            path: ""
+                        },
+
+                        {
+                            title: "All Users",
+                            path: ""
+                        },
+                    ]
+                }
             },
             {
                 title: "Components",
@@ -99,6 +112,32 @@ const menuItems: MenuItem[] = [
                 title: "Pages",
                 path: "/dashboard/pages",
                 icon: <PiFolderSimpleFill className="text-gray-200 hover:text-white transition-all text-[18px]"/>,
+                submenu: {
+                    title: "LOGIN SCREENS:",
+                    list: [
+                        {
+                            title: "Login",
+                            path: ""
+                        },
+
+                        {
+                            title: "Register",
+                            path: ""
+                        },
+                        {
+                            title: "Forgot Password",
+                            path: ""
+                        },
+                        {
+                            title: "404 Page",
+                            path: ""
+                        },
+                        {
+                            title: "Blank Page",
+                            path: ""
+                        },
+                    ]
+                }
             },
             {
                 title: "Charts",

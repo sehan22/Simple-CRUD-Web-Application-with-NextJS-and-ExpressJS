@@ -11,7 +11,7 @@ function Navbar() {
     const path = usePathname();
 
     return (
-        <div className="flex justify-between items-center px-5 py-5 bg-white shadow-lg shadow-gray-200 font-nunito">
+        <div className="flex justify-between items-center px-10 py-5 bg-white shadow-lg shadow-gray-200 font-nunito">
 
             <div className="relative w-[400px]">
                 <input
