@@ -5,15 +5,20 @@ import {usePathname} from "next/navigation";
 import {FaBell, FaRegUserCircle, FaSearch, FaUserCircle} from "react-icons/fa";
 import {HiMail} from "react-icons/hi";
 import Image from "next/image";
+import {IoMenu} from "react-icons/io5";
 
 
 function Navbar() {
     const path = usePathname();
 
     return (
-        <div className="flex justify-between items-center px-10 py-5 bg-white shadow-lg shadow-gray-200 font-nunito">
+        <div className="flex justify-between items-center px-10 gap-5 py-5 bg-white shadow-lg shadow-gray-200 font-nunito">
 
-            <div className="relative w-[400px]">
+            <div className="sm:hidden w-[40px] h-[40px] transition-all rounded-full hover:border-[3px] hover:border-Primary hover:border-opacity-20 hover:bg-Primary hover:bg-opacity-10 flex justify-center items-center">
+                <IoMenu className="text-[19px] text-Primary" />
+            </div>
+
+            <div className="hidden sm:block relative flex-1 max-w-[400px]">
                 <input
                     type="text"
                     placeholder="Search for.."
@@ -34,7 +39,7 @@ function Navbar() {
                 <hr/>
 
                 <div className="flex items-center justify-center gap-3">
-                    <h1 className="text-normal text-Dark">Douglas McGee</h1>
+                    <h1 className="hidden lg:block text-normal text-Dark">Sehan Ranaweera</h1>
 
                     <FaUserCircle className="text-[25px] text-Dark" />
                 </div>

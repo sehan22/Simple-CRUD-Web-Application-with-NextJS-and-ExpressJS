@@ -162,7 +162,7 @@ export default function SideBar() {
 
     return (
         <div
-            className={`transition-all duration-300 flex ${isOpen ? 'w-[105px]' : 'w-[225px]'} flex-col justify-start items-start min-h-screen p-5 font-nunito`}>
+            className={`hidden sm:flex transition-all duration-300 ${isOpen ? 'w-[105px]' : 'w-[225px]'} flex-col justify-start items-start min-h-screen p-5 font-nunito`}>
 
             <div className="flex items-center justify-center w-full gap-3">
 
@@ -201,7 +201,7 @@ export default function SideBar() {
                 ))}
             </div>
 
-            <div className="flex justify-center w-full mt-5">
+            <div className="hidden sm:flex justify-center w-full mt-5">
                 <div
                     className="flex cursor-pointer hover:shadow-sm transition-all justify-center items-center p-3 rounded-full bg-white bg-opacity-5 hover:bg-opacity-10"
                     onClick={toggleSidebar}
