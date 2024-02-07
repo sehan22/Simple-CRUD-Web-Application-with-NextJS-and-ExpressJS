@@ -2,9 +2,10 @@
 
 import React from 'react';
 import {usePathname} from "next/navigation";
-import {FaBell, FaSearch} from "react-icons/fa";
+import {FaBell, FaRegUserCircle, FaSearch, FaUserCircle} from "react-icons/fa";
 import {HiMail} from "react-icons/hi";
 import Image from "next/image";
+
 
 function Navbar() {
     const path = usePathname();
@@ -26,25 +27,21 @@ function Navbar() {
 
             <div className="flex justify-between items-center gap-2">
                 <div className="flex justify-center items-center gap-3">
-                    <FaBell className="text-[16px] text-gray-300 hover:text-gray-400 transition-all" />
-                    <HiMail className="text-[19px] text-gray-300 hover:text-gray-400 transition-all" />
+                    <FaBell className="text-[16px] text-gray-300 hover:text-gray-400 transition-all"/>
+                    <HiMail className="text-[19px] text-gray-300 hover:text-gray-400 transition-all"/>
                 </div>
 
                 <hr/>
 
                 <div className="flex items-center justify-center gap-3">
-                    <h1 className="">Douglas McGee</h1>
-                    <Image
-                        src="/4.png"
-                        width={32}
-                        height={32}
-                        alt="Picture of the author"
-                        className="bg-gray-400 rounded-full"
-                    />
-                </div>
-            </div>
+                    <h1 className="text-normal text-Dark">Douglas McGee</h1>
 
-            <p>{path.split("/").pop()?.toUpperCase()}</p>
+                    <FaUserCircle className="text-[25px] text-Dark" />
+                </div>
+
+                {/*root name*/}
+                <p className="hidden">{path.split("/").pop()?.toUpperCase()}</p>
+            </div>
         </div>
     );
 }

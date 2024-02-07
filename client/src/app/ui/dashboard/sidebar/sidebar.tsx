@@ -30,6 +30,7 @@ const menuItems: MenuItem[] = [
                 title: "Dashboard",
                 path: "/dashboard/",
                 icon: <IoIosSpeedometer className="text-gray-200 hover:text-white transition-all text-[18px]"/>,
+
             },
         ],
     },
@@ -46,11 +47,47 @@ const menuItems: MenuItem[] = [
                 title: "Components",
                 path: "/dashboard/components",
                 icon: <FaGear className="text-gray-200 hover:text-white transition-all text-[18px]"/>,
+                submenu: {
+                    title: "CUSTOM COMPONENTS:",
+                    list: [
+                        {
+                            title: "Buttons",
+                            path: "/dashboard/components/buttons"
+                        },
+
+                        {
+                            title: "Cards",
+                            path: ""
+                        },
+                    ]
+                }
             },
             {
                 title: "Utilities",
                 path: "/dashboard/utilities",
                 icon: <FaWrench className="text-gray-200 hover:text-white transition-all text-[18px]"/>,
+                submenu: {
+                    title: "Custom Utilities:",
+                    list: [
+                        {
+                            title: "Colours",
+                            path: ""
+                        },
+
+                        {
+                            title: "Borders",
+                            path: ""
+                        },
+                        {
+                            title: "Animation",
+                            path: ""
+                        },
+                        {
+                            title: "Other",
+                            path: ""
+                        },
+                    ]
+                }
             },
         ],
     },
