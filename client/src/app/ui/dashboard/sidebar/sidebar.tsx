@@ -161,6 +161,7 @@ export default function SideBar() {
     }
 
     return (
+        /*${localStorage.getItem("isOpen") === "true" ? 'hidden' : '' }*/
         <div
             className={`hidden sm:flex transition-all duration-300 ${isOpen ? 'w-[105px]' : 'w-[225px]'} flex-col justify-start items-start min-h-screen p-5 font-nunito`}>
 
@@ -206,7 +207,8 @@ export default function SideBar() {
                     className="flex cursor-pointer hover:shadow-sm transition-all justify-center items-center p-3 rounded-full bg-white bg-opacity-5 hover:bg-opacity-10"
                     onClick={toggleSidebar}
                 >
-                    <FaAngleLeft className={`text-[20px] transition-all duration-500 ease-in text-gray-200 ${isOpen ? 'rotate-180' : 'rotate-0'}`}/>
+                    <FaAngleLeft
+                        className={`text-[20px] transition-all duration-500 ease-in text-gray-200 ${isOpen ? 'rotate-180' : 'rotate-0'}`}/>
                 </div>
             </div>
         </div>
