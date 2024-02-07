@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div>
-            <div className="flex justify-center items-center mx-auto h-screen w-screen">
+            <div>
                 <h1>About</h1>
             </div>
         </div>

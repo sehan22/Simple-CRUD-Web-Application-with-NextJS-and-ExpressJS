@@ -1,18 +1,27 @@
-import React from 'react';
+'use client'
+
 import SideBar from "@/app/ui/dashboard/sidebar/sidebar";
 import Navbar from "@/app/ui/dashboard/navbar/navbar";
+import {FaAngleLeft} from "react-icons/fa";
+import {useState} from "react";
 
 export default function Layout({children,}: Readonly<{ children: React.ReactNode; }>) {
+
+    // const [isClick, setIsClick] = useState(localStorage.getItem("isClick"));
+
+
     return (
         <div className="flex">
-            <div className="w-[225px] bg-gradient-to-b from-blue-500 to-blue-700 rounded-e-lg shadow-xl">
+
+            <div className="bg-gradient-to-b z-10 from-blue-500 to-blue-700 shadow-xl">
                 <SideBar/>
             </div>
 
-            <div className="p-5 flex-1">
+            <div className="bg-Light flex-1">
                 <Navbar/>
                 {children}
             </div>
+
         </div>
     );
 }
