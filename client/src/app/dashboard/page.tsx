@@ -1,8 +1,31 @@
-import React from 'react';
+'use client'
+
+import React, {useEffect, useState} from 'react';
 import {FaCalendar, FaClipboardList, FaComments, FaDollarSign, FaDownload, FaLongArrowAltRight} from "react-icons/fa";
 import {MdKeyboardArrowUp} from "react-icons/md";
 
 export default function Dashboard() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            setIsVisible(scrollTop > 20); // Change 20 to the desired scroll position to show the button
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <>
             <div className="flex flex-col gap-5 px-10 flex-1 font-nunito">
@@ -290,8 +313,10 @@ export default function Dashboard() {
                 </div>
 
                 {/*scroll to top*/}
-                <div className="fixed flex justify-center items-center z-50 right-5 bottom-5 bg-opacity-50 h-10 w-10 bg-Dark rounded">
-                    <MdKeyboardArrowUp className="font-bold text-Light text-[20px]" />
+                <div
+                    className={`fixed transition-all flex justify-center items-center z-50 right-5 bottom-5 bg-opacity-50 h-10 w-10 bg-Dark rounded ${isVisible ? 'block' : 'hidden'}`}
+                    onClick={scrollToTop}>
+                    <MdKeyboardArrowUp className="font-bold text-Light text-[20px]"/>
                 </div>
             </div>
 
