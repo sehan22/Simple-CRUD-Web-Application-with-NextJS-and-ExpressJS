@@ -174,16 +174,16 @@ export default function Dashboard() {
                     {/*colour pallets*/}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
 
-                        <div className="flex flex-col rounded justify-center items-center w-full bg-Primary p-5 font-bold">
-                            <h1>Primary</h1>
-                            <h1>#4e73df</h1>
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Primary p-5">
+                            <h1 className="text-normal text-Light font-bold">Primary</h1>
+                            <h1 className="text-small text-Light opacity-50">#4e73df</h1>
                         </div>
 
                     </div>
                 </div>
 
 
-                <div className="flex flex-col justify-center items-center gap-5 flex-1">
+                <div className="flex flex-col justify-start items-center gap-5 flex-1">
 
                     {/*Illustrations*/}
                     <div className="w-full bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
