@@ -63,8 +63,6 @@ export default function LineChart() {
     }, []);
 
     return (
-        <div>
-            <canvas className={'w-full h-80'} ref={chartRef}></canvas>
-        </div>
+        <canvas className="w-full h-full" ref={chartRef}></canvas>
     );
 }

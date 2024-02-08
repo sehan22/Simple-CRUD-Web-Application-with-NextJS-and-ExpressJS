@@ -53,8 +53,6 @@ export default function DonutChart() {
     }, []);
 
     return (
-        <div>
-            <canvas ref={chartRef} className="w-full h-80"></canvas>
-        </div>
+            <canvas ref={chartRef} className="w-full h-full"></canvas>
     );
 }

@@ -8,6 +8,8 @@ import DonutChart from "@/app/ui/dashboard/chart/piechart";
 import {CiMenuKebab} from "react-icons/ci";
 import {Divider, Popover, PopoverContent, PopoverTrigger} from "@nextui-org/react";
 import {Button} from "@nextui-org/button";
+import Img from "../illustrations.svg"
+import Image from "next/image";
 
 export default function Dashboard() {
     const [isVisible, setIsVisible] = useState(false);
@@ -50,7 +52,8 @@ export default function Dashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Primary rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Primary rounded shadow-sm bg-white"
+                        style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Primary">Earnings (Monthly)</p>
                             <h1 className="font-bold text-[20px] text-Dark">$ 40,000</h1>
@@ -60,7 +63,8 @@ export default function Dashboard() {
                     </div>
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Success rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Success rounded shadow-sm bg-white"
+                        style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Success">Earnings (Annual)</p>
                             <h1 className="font-bold text-[20px] text-Dark">$ 215,000</h1>
@@ -70,7 +74,8 @@ export default function Dashboard() {
                     </div>
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Info rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Info rounded shadow-sm bg-white"
+                        style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Info">Tasks</p>
                             <h1 className="font-bold text-[20px] text-Dark">50%</h1>
@@ -86,7 +91,8 @@ export default function Dashboard() {
                     </div>
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Warning rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Warning rounded shadow-sm bg-white"
+                        style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Warning">Pending Requests</p>
                             <h1 className="font-bold text-[20px] text-Dark">18</h1>
@@ -107,11 +113,12 @@ export default function Dashboard() {
                 </div>
 
                 {/*chart*/}
-                <div className="flex flex-col xl:flex-row w-full justify-center items-start mx-auto gap-5">
-                    <div className="w-full xl:w-[65%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                <div className="flex flex-col mxl:flex-row w-full justify-center items-start mx-auto gap-5">
+
+                    <div className="flex flex-col items-center justify-center w-full mxl:w-[65%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
 
                         <div
-                            className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
+                            className="flex justify-between rounded-t w-full bg-Light items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                             Earnings Overview
 
                             <Popover placement="bottom-end">
@@ -134,17 +141,21 @@ export default function Dashboard() {
                             </Popover>
                         </div>
 
-                        <div
-                            className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
-                            <LineChart/>
-                        </div>
+                        <div className="flex justify-center items-center w-full bg-white p-2">
 
+                            <div
+                                className="w-[220px] lmd:w-[300px] lmd:h-[150px] sm:w-[300px] sm:h-[150px] md:w-[400px] md:h-[200px] lg:w-[600px] lg:h-[300px]">
+                                <LineChart/>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div className="w-full xl:w-[35%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                    <div className="flex flex-col items-center justify-center w-full mxl:w-[35%] bg-Light rounded"
+                         style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
 
                         <div
-                            className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
+                            className="flex justify-between rounded-t w-full bg-Light items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                             Revenue Sources
 
                             <Popover placement="bottom-end">
@@ -167,9 +178,13 @@ export default function Dashboard() {
                             </Popover>
                         </div>
 
-                        <div
-                            className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
-                            <DonutChart/>
+                        <div className="flex justify-center items-center w-full bg-white p-2">
+
+                            <div
+                                className="flex justify-center w-[220px] lmd:w-[300px] lmd:h-[150px] sm:w-[300px] sm:h-[150px] md:w-[400px] md:h-[200px] lg:w-[400px] lg:h-[300px]">
+                                <DonutChart/>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -211,7 +226,7 @@ export default function Dashboard() {
                                 </div>
 
                                 <div className="w-full h-4 bg-Secondary bg-opacity-20 rounded-md">
-                                    <div className="w-[40%] rounded-full h-full bg-Warning"></div>
+                                <div className="w-[40%] rounded-full h-full bg-Warning"></div>
                                 </div>
                             </div>
 
@@ -324,7 +339,9 @@ export default function Dashboard() {
 
                             <div
                                 className="flex flex-col justify-center p-5 gap-5 items-center w-full bg-white">
-                                <div className="w-full min-h-60 bg-gray-200"></div>
+                                <div className="w-full min-h-60 bg-gray-200">
+
+                                </div>
 
                                 <div className="flex flex-col justify-center items-center w-full gap-5">
                                     <p className="text-subtopic text-Secondary">
@@ -345,7 +362,8 @@ export default function Dashboard() {
                         </div>
 
                         {/*Development Approach*/}
-                        <div className="w-full bg-Light rounded mb-10" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                        <div className="w-full bg-Light rounded mb-10"
+                             style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                             <div
                                 className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                                 Development Approach
@@ -375,7 +393,7 @@ export default function Dashboard() {
 
                 {/*scroll to top*/}
                 <div
-                    className={`fixed transition-all flex justify-center items-center z-50 right-5 bottom-5 bg-opacity-50 h-10 w-10 bg-Dark rounded ${isVisible ? 'block' : 'hidden'}`}
+                    className={`fixed transition-all flex justify-center items-center z-50 right-10 bottom-10 bg-opacity-50 h-10 w-10 bg-Dark rounded ${isVisible ? 'block' : 'hidden'}`}
                     onClick={scrollToTop}>
                     <MdKeyboardArrowUp className="font-bold text-Light text-[20px]"/>
                 </div>

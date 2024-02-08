@@ -164,13 +164,13 @@ export default function SideBar({ isButtonClick } : ToggleNavBarProps) {
 
     function toggleSidebar() {
         setIsOpen(prevState => !prevState);
-        alert(isButtonClick)
     }
 
     return (
         /*${localStorage.getItem("isOpen") === "true" ? 'hidden' : '' }*/
+        /*${localStorage.getItem('isOpen') === 'true' ? 'hidden' : 'block' }*/
         <div
-            className={`${localStorage.getItem('isOpen') === 'true' ? 'hidden' : 'block' } sm:flex transition-all duration-300 ${isOpen ? 'w-[105px]' : 'w-[225px]'} flex-col justify-start items-start min-h-screen p-5 font-nunito`}>
+            className={`hidden sm:flex transition-all duration-300 ${isOpen ? 'w-[105px]' : 'w-[225px]'} flex-col justify-start items-start min-h-screen p-5 font-nunito`}>
 
             <div className="flex items-center justify-center w-full gap-3">
 
@@ -191,7 +191,6 @@ export default function SideBar({ isButtonClick } : ToggleNavBarProps) {
             <hr className="w-full border-t-[1px] border-gray-50 border-opacity-20 mt-5"/>
 
             <div className="flex flex-col justify-start items-start w-full gap-3">
-                <button type="button" onClick={toggleSidebar}>check</button>
 
                 {menuItems.map((menuItem, index) => (
                     <div className="flex flex-col w-full" key={index}>
