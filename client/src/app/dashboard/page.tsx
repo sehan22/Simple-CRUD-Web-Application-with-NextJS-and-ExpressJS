@@ -172,11 +172,46 @@ export default function Dashboard() {
                     </div>
 
                     {/*colour pallets*/}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-10">
 
-                        <div className="flex flex-col rounded justify-center items-center w-full bg-Primary p-5">
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Primary p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                             <h1 className="text-normal text-Light font-bold">Primary</h1>
                             <h1 className="text-small text-Light opacity-50">#4e73df</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Success p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Light font-bold">Success</h1>
+                            <h1 className="text-small text-Light opacity-50">#1cc88a</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Info p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Light font-bold">Info</h1>
+                            <h1 className="text-small text-Light opacity-50">#36b9cc</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Warning p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Light font-bold">Warning</h1>
+                            <h1 className="text-small text-Light opacity-50">#f6c23e</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Danger p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Light font-bold">Danger</h1>
+                            <h1 className="text-small text-Light opacity-50">#e74a3b</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Secondary p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Light font-bold">Secondary</h1>
+                            <h1 className="text-small text-Light opacity-50">#858796</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Light p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Secondary font-bold">Light</h1>
+                            <h1 className="text-small text-Secondary opacity-50">#f8f9fc</h1>
+                        </div>
+
+                        <div className="flex flex-col rounded justify-center items-center w-full bg-Dark p-5" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                            <h1 className="text-normal text-Light font-bold">Dark</h1>
+                            <h1 className="text-small text-Light opacity-50">#5a5c69</h1>
                         </div>
 
                     </div>
