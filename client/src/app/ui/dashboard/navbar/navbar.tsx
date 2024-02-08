@@ -77,8 +77,37 @@ function Navbar() {
                         </PopoverContent>
                     </Popover>
 
-                    <FaBell className="text-[16px] text-gray-300 hover:text-gray-400 transition-all"/>
-                    <HiMail className="text-[19px] text-gray-300 hover:text-gray-400 transition-all"/>
+                    <Popover placement="bottom-end">
+                        <PopoverTrigger>
+                            <Button>
+                                <FaBell className="text-[16px] text-gray-300 hover:text-gray-400 transition-all"/>
+                            </Button>
+                        </PopoverTrigger>
+                        <PopoverContent>
+                            <div
+                                className="flex flex-col gap-5 p-5 ms-5 min-w-[200px] bg-white shadow-xl rounded-xl font-nunito">
+
+                            </div>
+                        </PopoverContent>
+                    </Popover>
+
+                    <Popover placement="bottom-end">
+                        <PopoverTrigger>
+                            <Button>
+                                <HiMail className="text-[19px] text-gray-300 hover:text-gray-400 transition-all"/>
+                            </Button>
+                        </PopoverTrigger>
+                        <PopoverContent>
+                            <div
+                                className="flex flex-col gap-5 ms-5 min-w-[280px] bg-white shadow-xl rounded-xl font-nunito">
+                                <div className="w-full bg-Primary rounded-t">
+                                    <h1>Alert Center</h1>
+                                </div>
+                            </div>
+                        </PopoverContent>
+                    </Popover>
+
+
                 </div>
 
                 <hr/>

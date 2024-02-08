@@ -107,8 +107,8 @@ export default function Dashboard() {
                 </div>
 
                 {/*chart*/}
-                <div className="flex w-full justify-center items-start mx-auto gap-5">
-                    <div className="w-[65%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                <div className="hidden flex flex-col xl:flex-row w-full justify-center items-start mx-auto gap-5">
+                    <div className="w-full xl:w-[65%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
 
                         <div
                             className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
@@ -141,7 +141,7 @@ export default function Dashboard() {
 
                     </div>
 
-                    <div className="w-[35%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                    <div className="w-full xl:w-[35%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
 
                         <div
                             className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
@@ -175,15 +175,15 @@ export default function Dashboard() {
                 </div>
 
                 {/*details*/}
-                <div className="flex w-full justify-center items-start mx-auto gap-5">
+                <div className="flex flex-col flex-1 lg:flex-row w-full justify-center items-start mx-auto gap-5">
 
-                    <div className="flex flex-col justify-center items-center gap-5 flex-1">
+                    <div className="flex w-full flex-col justify-center items-center gap-5 flex-1">
 
                         {/*projects*/}
                         <div className="w-full bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
 
                             <div
-                                className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
+                                className="flex w justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                                 Project
                             </div>
 
@@ -309,7 +309,6 @@ export default function Dashboard() {
                                 <h1 className="text-normal text-Light font-bold">Dark</h1>
                                 <h1 className="text-small text-Light opacity-50">#5a5c69</h1>
                             </div>
-
                         </div>
                     </div>
 
@@ -325,7 +324,7 @@ export default function Dashboard() {
 
                             <div
                                 className="flex flex-col justify-center p-5 gap-5 items-center w-full bg-white">
-                                <div className="w-[400px] h-[200px] bg-gray-200"></div>
+                                <div className="w-full min-h-60 bg-gray-200"></div>
 
                                 <div className="flex flex-col justify-center items-center w-full gap-5">
                                     <p className="text-subtopic text-Secondary">
@@ -346,8 +345,7 @@ export default function Dashboard() {
                         </div>
 
                         {/*Development Approach*/}
-                        <div className="w-full bg-Light rounded mb-10"
-                             style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+                        <div className="w-full bg-Light rounded mb-10" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                             <div
                                 className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                                 Development Approach
@@ -371,7 +369,6 @@ export default function Dashboard() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
