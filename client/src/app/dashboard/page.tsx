@@ -6,6 +6,8 @@ import {MdKeyboardArrowUp} from "react-icons/md";
 import LineChart from "@/app/ui/dashboard/chart/linechart";
 import DonutChart from "@/app/ui/dashboard/chart/piechart";
 import {CiMenuKebab} from "react-icons/ci";
+import {Divider, Popover, PopoverContent, PopoverTrigger} from "@nextui-org/react";
+import {Button} from "@nextui-org/button";
 
 export default function Dashboard() {
     const [isVisible, setIsVisible] = useState(false);
@@ -112,7 +114,24 @@ export default function Dashboard() {
                             className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                             Earnings Overview
 
-                            <CiMenuKebab />
+                            <Popover placement="bottom-end">
+                                <PopoverTrigger>
+                                    <Button>
+                                        <CiMenuKebab/>
+                                    </Button>
+                                </PopoverTrigger>
+                                <PopoverContent>
+                                    <div
+                                        className="flex flex-col gap-5 p-5 ms-5 min-w-[200px] bg-white shadow-xl rounded-xl font-nunito">
+                                        <h1 className="text-Secondary text-opacity-50 text-smaller uppercase font-bold">Dropdown
+                                            Header:</h1>
+                                        <h1 className="text-normal text-Dark">Action</h1>
+                                        <h1 className="text-normal text-Dark">Another action</h1>
+                                        <Divider/>
+                                        <h1 className="text-normal text-Dark">Something else here</h1>
+                                    </div>
+                                </PopoverContent>
+                            </Popover>
                         </div>
 
                         <div
@@ -128,7 +147,24 @@ export default function Dashboard() {
                             className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
                             Revenue Sources
 
-                            <CiMenuKebab />
+                            <Popover placement="bottom-end">
+                                <PopoverTrigger>
+                                    <Button>
+                                        <CiMenuKebab/>
+                                    </Button>
+                                </PopoverTrigger>
+                                <PopoverContent>
+                                    <div
+                                        className="flex flex-col gap-5 p-5 ms-5 min-w-[200px] bg-white shadow-xl rounded-xl font-nunito">
+                                        <h1 className="text-Secondary text-opacity-50 text-smaller uppercase font-bold">Dropdown
+                                            Header:</h1>
+                                        <h1 className="text-normal text-Dark">Action</h1>
+                                        <h1 className="text-normal text-Dark">Another action</h1>
+                                        <Divider/>
+                                        <h1 className="text-normal text-Dark">Something else here</h1>
+                                    </div>
+                                </PopoverContent>
+                            </Popover>
                         </div>
 
                         <div
