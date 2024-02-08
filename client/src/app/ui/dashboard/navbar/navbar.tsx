@@ -5,11 +5,13 @@ import {usePathname} from "next/navigation";
 import {FaBell, FaRegUserCircle, FaSearch, FaUserCircle} from "react-icons/fa";
 import {HiMail} from "react-icons/hi";
 import Image from "next/image";
-import {IoMenu} from "react-icons/io5";
+import {IoDocumentTextOutline, IoMenu} from "react-icons/io5";
 import {Divider, Popover, PopoverContent, PopoverTrigger} from "@nextui-org/react";
 import {Button} from "@nextui-org/button";
-import {CiMenuKebab} from "react-icons/ci";
+import {CiCoinInsert, CiMenuKebab} from "react-icons/ci";
 import SideBar from "@/app/ui/dashboard/sidebar/sidebar";
+import {IoIosWarning} from "react-icons/io";
+import {TbCoinFilled} from "react-icons/tb";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +64,7 @@ function Navbar() {
                         </PopoverTrigger>
                         <PopoverContent>
                             <div
-                                className="flex flex-col gap-5 p-5 ms-5 min-w-[200px] bg-white shadow-xl rounded-xl font-nunito">
+                                className="flex flex-col gap-5 p-5 ms-5 min-w-[200px] bg-white rounded-xl font-nunito" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                                 <div className="relative flex-1 max-w-[400px]">
                                     <input
                                         type="text"
@@ -85,9 +87,63 @@ function Navbar() {
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent>
-                            <div
-                                className="flex flex-col gap-5 p-5 ms-5 min-w-[200px] bg-white shadow-xl rounded-xl font-nunito">
+                            <div className="flex flex-col ms-5 w-[280px] bg-white shadow-xl rounded-xl font-nunito">
+                                <div className="w-full bg-Primary rounded-t p-3">
+                                    <h1 className="uppercase text-smaller font-bold text-Light">Message Center</h1>
+                                </div>
 
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-2 bg-Success rounded-full">
+                                        <IoDocumentTextOutline className="text-Light text-[23px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full">
+                                        <h1 className="text-smaller text-Dark">December 12, 2019</h1>
+                                        <h1 className="text-small text-black font-bold text-opacity-70">
+                                            A new monthly report is ready to download!
+                                        </h1>
+
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-2 bg-Primary rounded-full">
+                                        <TbCoinFilled className="text-Light text-[23px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full">
+                                        <h1 className="text-smaller text-Dark">December 7, 2019</h1>
+                                        <h1 className="text-small text-black font-bold text-opacity-70">
+                                            $290.29 has been deposited into your account!
+                                        </h1>
+
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-2 bg-Warning rounded-full">
+                                        <IoIosWarning className="text-Light text-[23px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full">
+                                        <h1 className="text-smaller text-Dark">December 2, 2019</h1>
+                                        <h1 className="text-small text-black font-bold text-opacity-70">
+                                            Spending Alert: We have noticed unusually high spending for your account.
+                                        </h1>
+
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+
+                                <div className="flex justify-center items-center w-full p-3">
+                                    <h1 className="text-smaller text-Dark">Show All Alerts</h1>
+                                </div>
                             </div>
                         </PopoverContent>
                     </Popover>
@@ -99,10 +155,74 @@ function Navbar() {
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent>
-                            <div
-                                className="flex flex-col gap-5 ms-5 min-w-[280px] bg-white shadow-xl rounded-xl font-nunito">
-                                <div className="w-full bg-Primary rounded-t">
-                                    <h1>Alert Center</h1>
+                            <div className="flex flex-col ms-5 w-[280px] bg-white shadow-xl rounded-xl font-nunito">
+                                <div className="w-full bg-Primary rounded-t p-3">
+                                    <h1 className="uppercase text-smaller font-bold text-Light">Message Center</h1>
+                                </div>
+
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-1 bg-Success rounded-full">
+                                        <FaUserCircle className="text-Light text-[25px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full overflow-hidden">
+                                        <h1 className="text-small text-black font-bold text-opacity-70 overflow-hidden overflow-ellipsis whitespace-nowrap">Hi
+                                            there! I am wondering if you can help me with a
+                                            problem I have been having.</h1>
+                                        <h1 className="text-smaller text-Dark">Emily Fowler · 58m</h1>
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-1 bg-Primary rounded-full">
+                                        <FaUserCircle className="text-Light text-[25px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full overflow-hidden">
+                                        <h1 className="text-small text-black font-bold text-opacity-70 overflow-hidden overflow-ellipsis whitespace-nowrap">Hi
+                                            there! I am wondering if you can help me with a
+                                            problem I have been having.</h1>
+                                        <h1 className="text-smaller text-Dark">Emily Fowler · 58m</h1>
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-1 bg-Warning rounded-full">
+                                        <FaUserCircle className="text-Light text-[25px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full overflow-hidden">
+                                        <h1 className="text-small text-black font-bold text-opacity-70 overflow-hidden overflow-ellipsis whitespace-nowrap">Hi
+                                            there! I am wondering if you can help me with a
+                                            problem I have been having.</h1>
+                                        <h1 className="text-smaller text-Dark">Emily Fowler · 58m</h1>
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+                                <div className="flex justify-start items-center w-full gap-2 p-3">
+                                    <div className="p-1 bg-Danger rounded-full">
+                                        <FaUserCircle className="text-Light text-[25px]"/>
+                                    </div>
+
+                                    <div className="flex-1 w-full overflow-hidden">
+                                        <h1 className="text-small text-black font-bold text-opacity-70 overflow-hidden overflow-ellipsis whitespace-nowrap">Hi
+                                            there! I am wondering if you can help me with a
+                                            problem I have been having.</h1>
+                                        <h1 className="text-smaller text-Dark">Emily Fowler · 58m</h1>
+                                    </div>
+                                </div>
+
+                                <Divider/>
+
+
+                                <div className="flex justify-center items-center w-full p-3">
+                                    <h1 className="text-smaller text-Dark">Read More Messages</h1>
                                 </div>
                             </div>
                         </PopoverContent>
