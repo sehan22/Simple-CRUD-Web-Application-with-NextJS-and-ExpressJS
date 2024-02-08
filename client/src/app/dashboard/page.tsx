@@ -4,8 +4,9 @@ import {FaCalendar, FaClipboardList, FaComments, FaDollarSign, FaDownload} from 
 export default function Dashboard() {
     return (
 
-        <div className="px-10 flex-1 font-nunito">
-            <div className="flex justify-between items-center py-5">
+        <div className="flex flex-col gap-5 px-10 flex-1 font-nunito">
+            {/*Header*/}
+            <div className="flex justify-between items-center pt-5">
                 <h1 className="text-Dark text-[25px]">Dashboard</h1>
                 <button
                     type="button"
@@ -16,6 +17,7 @@ export default function Dashboard() {
                 </button>
             </div>
 
+            {/*4 Cards*/}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
 
                 <div
@@ -75,12 +77,109 @@ export default function Dashboard() {
                 </div>*/}
             </div>
 
+            {/*chart*/}
             <div>
                 <div>
 
                 </div>
 
                 <div></div>
+            </div>
+
+            {/*details*/}
+            <div className="flex w-full justify-center items-center mx-auto">
+
+                <div className="flex flex-col justify-center items-center gap-5 flex-1">
+
+                    {/*projects*/}
+                    <div className="w-full bg-Light rounded">
+
+                        <div className="flex justify-between items-center p-5 border-b-2 py-3 font-nunito text-subtopic text-Primary font-bold">
+                            Project
+                        </div>
+
+                        {/*Server Migration*/}
+                        <div className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+
+                            <div className="flex justify-between items-center w-full">
+                                <h1>Server Migration</h1>
+                                <h1>20%</h1>
+                            </div>
+
+                            <div className="w-full h-4 bg-Secondary bg-opacity-20 rounded-full">
+                                <div className="w-[20%] rounded-full h-full bg-Danger"></div>
+                            </div>
+                        </div>
+
+                        {/*Server Migration*/}
+                        <div className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+
+                            <div className="flex justify-between items-center w-full">
+                                <h1>Server Migration</h1>
+                                <h1>40%</h1>
+                            </div>
+
+                            <div className="w-full h-4 bg-Secondary bg-opacity-20 rounded-full">
+                                <div className="w-[40%] rounded-full h-full bg-Warning"></div>
+                            </div>
+                        </div>
+
+                        {/*Server Migration*/}
+                        <div className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+
+                            <div className="flex justify-between items-center w-full">
+                                <h1>Server Migration</h1>
+                                <h1>60%</h1>
+                            </div>
+
+                            <div className="w-full h-4 bg-Secondary bg-opacity-20 rounded-full">
+                                <div className="w-[60%] rounded-full h-full bg-Primary"></div>
+                            </div>
+                        </div>
+
+                        {/*Server Migration*/}
+                        <div className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+
+                            <div className="flex justify-between items-center w-full">
+                                <h1>Server Migration</h1>
+                                <h1>80%</h1>
+                            </div>
+
+                            <div className="w-full h-4 bg-Secondary bg-opacity-20 rounded-full">
+                                <div className="w-[80%] rounded-full h-full bg-Info"></div>
+                            </div>
+                        </div>
+
+                        {/*Server Migration*/}
+                        <div className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+
+                            <div className="flex justify-between items-center w-full">
+                                <h1>Server Migration</h1>
+                                <h1>Completed!</h1>
+                            </div>
+
+                            <div className="w-full h-4 bg-Secondary bg-opacity-20 rounded-full">
+                                <div className="w-[100%] rounded-full h-full bg-Success"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {/*colour pallets*/}
+                    <div>a</div>
+                </div>
+
+
+                <div className="flex flex-col justify-center items-center gap-5 flex-1">
+
+                    {/*Illustrations*/}
+                    <div>a</div>
+
+                    {/*Development Approach*/}
+                    <div>a</div>
+
+                </div>
+
             </div>
         </div>
 
