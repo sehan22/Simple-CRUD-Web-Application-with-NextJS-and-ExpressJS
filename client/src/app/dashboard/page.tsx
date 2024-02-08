@@ -144,7 +144,7 @@ export default function Dashboard() {
                         <div className="flex justify-center items-center w-full bg-white p-2">
 
                             <div
-                                className="w-[220px] lmd:w-[300px] lmd:h-[150px] sm:w-[300px] sm:h-[150px] md:w-[400px] md:h-[200px] lg:w-[600px] lg:h-[300px]">
+                                className="w-[220px] lmd:w-[300px] lmd:h-[150px] sm:w-[300px] sm:h-[150px] md:w-[400px] md:h-[200px] lg:w-[600px] lg:h-[300px] 2xl:w-[700px] 2xl:h-[350px]">
                                 <LineChart/>
                             </div>
 
@@ -181,7 +181,7 @@ export default function Dashboard() {
                         <div className="flex justify-center items-center w-full bg-white p-2">
 
                             <div
-                                className="flex justify-center w-[220px] lmd:w-[300px] lmd:h-[150px] sm:w-[300px] sm:h-[150px] md:w-[400px] md:h-[200px] lg:w-[400px] lg:h-[300px]">
+                                className="flex justify-center w-[220px] lmd:w-[300px] lmd:h-[150px] sm:w-[300px] sm:h-[150px] md:w-[400px] md:h-[200px] lg:w-[400px] lg:h-[300px] 2xl:h-[350px]">
                                 <DonutChart/>
                             </div>
 
@@ -339,7 +339,7 @@ export default function Dashboard() {
 
                             <div
                                 className="flex flex-col justify-center p-5 gap-5 items-center w-full bg-white">
-                                <div className="w-full min-h-60 bg-gray-200">
+                                <div className="w-full min-h-60 bg-gray-50">
 
                                 </div>
 
