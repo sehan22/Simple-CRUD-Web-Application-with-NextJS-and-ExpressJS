@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaCalendar, FaClipboardList, FaComments, FaDollarSign, FaDownload, FaLongArrowAltRight} from "react-icons/fa";
+import {MdKeyboardArrowUp} from "react-icons/md";
 
 export default function Dashboard() {
     return (
@@ -288,11 +289,14 @@ export default function Dashboard() {
 
                 </div>
 
-                {/*footer*/}
-
+                {/*scroll to top*/}
+                <div className="fixed flex justify-center items-center z-50 right-5 bottom-5 bg-opacity-50 h-10 w-10 bg-Dark rounded">
+                    <MdKeyboardArrowUp className="font-bold text-Light text-[20px]" />
+                </div>
             </div>
 
-            <div className="flex flex-1 justify-center items-center bg-white p-5 font-nunito text-small text-Secondary">
+            {/*footer*/}
+            <div className="flex flex-1 justify-center items-center bg-white p-8 font-nunito text-small text-Secondary">
                 <h1>Copyright © Your Website 2021</h1>
             </div>
         </>
