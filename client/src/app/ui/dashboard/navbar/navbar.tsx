@@ -9,6 +9,7 @@ import {IoMenu} from "react-icons/io5";
 import {Divider, Popover, PopoverContent, PopoverTrigger} from "@nextui-org/react";
 import {Button} from "@nextui-org/button";
 import {CiMenuKebab} from "react-icons/ci";
+import SideBar from "@/app/ui/dashboard/sidebar/sidebar";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

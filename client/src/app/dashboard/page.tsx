@@ -50,7 +50,7 @@ export default function Dashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Primary rounded shadow-sm bg-white">
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Primary rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Primary">Earnings (Monthly)</p>
                             <h1 className="font-bold text-[20px] text-Dark">$ 40,000</h1>
@@ -60,7 +60,7 @@ export default function Dashboard() {
                     </div>
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Success rounded shadow-sm bg-white">
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Success rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Success">Earnings (Annual)</p>
                             <h1 className="font-bold text-[20px] text-Dark">$ 215,000</h1>
@@ -70,7 +70,7 @@ export default function Dashboard() {
                     </div>
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Info rounded shadow-sm bg-white">
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Info rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Info">Tasks</p>
                             <h1 className="font-bold text-[20px] text-Dark">50%</h1>
@@ -86,7 +86,7 @@ export default function Dashboard() {
                     </div>
 
                     <div
-                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Warning rounded shadow-sm bg-white">
+                        className="flex justify-between items-center px-5 py-7 border-s-4 border-Warning rounded shadow-sm bg-white" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
                         <div className="flex flex-col">
                             <p className="font-bold uppercase text-[11px] text-Warning">Pending Requests</p>
                             <h1 className="font-bold text-[20px] text-Dark">18</h1>
@@ -107,7 +107,7 @@ export default function Dashboard() {
                 </div>
 
                 {/*chart*/}
-                <div className="hidden flex flex-col xl:flex-row w-full justify-center items-start mx-auto gap-5">
+                <div className="flex flex-col xl:flex-row w-full justify-center items-start mx-auto gap-5">
                     <div className="w-full xl:w-[65%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
 
                         <div
