@@ -3,6 +3,9 @@
 import React, {useEffect, useState} from 'react';
 import {FaCalendar, FaClipboardList, FaComments, FaDollarSign, FaDownload, FaLongArrowAltRight} from "react-icons/fa";
 import {MdKeyboardArrowUp} from "react-icons/md";
+import LineChart from "@/app/ui/dashboard/chart/linechart";
+import DonutChart from "@/app/ui/dashboard/chart/piechart";
+import {CiMenuKebab} from "react-icons/ci";
 
 export default function Dashboard() {
     const [isVisible, setIsVisible] = useState(false);
@@ -102,12 +105,37 @@ export default function Dashboard() {
                 </div>
 
                 {/*chart*/}
-                <div>
-                    <div>
+                <div className="flex w-full justify-center items-start mx-auto gap-5">
+                    <div className="w-[65%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+
+                        <div
+                            className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
+                            Earnings Overview
+
+                            <CiMenuKebab />
+                        </div>
+
+                        <div
+                            className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+                            <LineChart/>
+                        </div>
 
                     </div>
 
-                    <div></div>
+                    <div className="w-[35%] bg-Light rounded" style={{boxShadow: '0 0px 24px rgba(0, 0, 0, 0.08)'}}>
+
+                        <div
+                            className="flex justify-between items-center p-5 border-b-2 border-gray-200 border-opacity-50 py-3 font-nunito text-subtopic text-Primary font-bold">
+                            Revenue Sources
+
+                            <CiMenuKebab />
+                        </div>
+
+                        <div
+                            className="flex flex-col justify-center p-5 items-center w-full bg-white font-nunito text-[13px] text-Secondary font-bold">
+                            <DonutChart/>
+                        </div>
+                    </div>
                 </div>
 
                 {/*details*/}
